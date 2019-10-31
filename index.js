@@ -12,5 +12,5 @@ const port = process.env.PORT || 4000;
 //the port will be set by heroku when we deploy
 console.log('port', port)
 server.listen(port, () => {
-  console.log('\n Server running on port 4000 \n');
+  console.log('\n Server running on port ${port} \n');
 });

@@ -21,7 +21,7 @@ In a react app
 Steps to prepare our API for deployment to Heroku
 - Dynamic port (b/c if all of use the same port it's going to conflict)
 - Set up "start" script that uses `node` not nodemon to run server
-- Install env
+- Install env `dotenv`
 
 
 The environment is the platform where the application is runnung

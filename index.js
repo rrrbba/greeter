@@ -6,6 +6,11 @@ server.get('/', (req, res) => {
   res.status(200).json({ hello: 'Web 23' });
 });
 
-server.listen(4000, () => {
+//The port is coming from the environment
+const port = process.env.PORT || 4000;
+
+//the port will be set by heroku when we deploy
+console.log('port', port)
+server.listen(port, () => {
   console.log('\n Server running on port 4000 \n');
 });
